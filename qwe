@@ -16,6 +16,10 @@ int factorial(int f) {
 int main() {
 	int f;
 	cin >> f;  
+	for (int i = 1; i < f; i++) {
+		cout << i << "*";
+	}
+	cout << f << " = ";
 	cout << factorial(f);
 	return 0;
 }
