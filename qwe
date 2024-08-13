@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int factorial(int f) {
+	int m = 1;
+	if (f == 0) return 1;
+	else {
+		for (int i = 1; i <= f; i++) {
+			m = m * i;
+		}
+	}
+	return m;
+}
+
+int main() {
+	int f;
+	cin >> f;  
+	cout << factorial(f);
+	return 0;
+}
